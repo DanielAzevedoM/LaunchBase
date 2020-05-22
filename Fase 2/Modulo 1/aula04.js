@@ -11,9 +11,9 @@ function mediaNotas(nota1, nota2, nota3){
     console.log(`A nota do ${nome[0]} é ${nota1}, do aluno ${nome[1]} é ${nota2} e a do aluno ${nome[2]} é ${nota3} e a média das três notas é: ${media}`);
 
     if(media < 5){
-      return console.log(`A média dos 3 alunos foi menor que 5.`);
+      return console.log(`A média dos 3 alunos é menor que 5.`);
     } else if (media > 5){
-      return console.log(`A média dos 3 alunos foi maior que 5`);
+      return console.log(`A média dos 3 alunos é maior que 5`);
     } else if (media == 5){
       return console.log(`A média dos 3 alunos é igual a 5`);
     }
