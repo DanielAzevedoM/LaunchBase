@@ -1,20 +1,3 @@
-/*Soma de despesas e receitas
-Crie um programa que calcula a soma de receitas e despesas de usuários e no fim retorna o saldo (receitas - despesas).
-
-Percorra o array de usuários e para cada usuário chame uma função chamada calculaSaldo que recebe como parâmetro as receitas e despesas do usuário:
-
-
-A função calculaSaldo deve utilizar a função somaNumeros para calcular a soma de receitas e despesas e no fim retornar o saldo do usuário, ou seja receitas - despesas.
-
-Crie uma segunda função que recebe como parâmetro um array de números 
-e retorna a soma deles e use-a para calcular a soma de receitas e despesas dentro da função calculaSaldo:
-
-No fim exiba todos usuários em telas, seu respectivo saldo e SE o saldo é POSITIVO ou NEGATIVO:
-
-Fulano possui saldo POSITIVO de 43.3
-Sicrano possui saldo NEGATIVO de -90.3
-*/
-
 const usuarios = [
   {
     nome: "Salvio",
@@ -33,30 +16,29 @@ const usuarios = [
   }
 ];
 
-
-
 function calculaSaldo(receitas, despesas) {
   const somaReceitas = somaNumeros(receitas);
   const somaDespesas = somaNumeros(despesas);
 
-  
   return somaReceitas - somaDespesas;
+
 }
 
 function somaNumeros(numeros) {
   let soma = 0;
   for(let numero of numeros){
-    soma = soma + numero
+    soma = soma + numero;
   }
+
   return soma;
 }
 
 for(let usuario of usuarios){
-  const saldo =  calculaSaldo(usuario.receitas, usuario.despesas);
+  const saldo = calculaSaldo(usuario.receitas, usuario.despesas);
 
-  if (saldo > 0) {
-    console.log(`${usuario.nome} possui saldo POSITIVO de ${saldo.toFixed(2)}`)
+  if(saldo < 0){
+    console.log(`O usuário ${usuario.nome} tem seu saldo negativo é de: ${saldo}`);
   } else {
-    console.log(`${usuario.nome} possui saldo NEGATIVO de ${saldo.toFixed(2)}`)
+    console.log(`O usuário ${usuario.nome} tem seu saldo positivo é de: ${saldo}`)
   }
 }
