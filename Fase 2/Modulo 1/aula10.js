@@ -3,6 +3,7 @@ Criar um progama que calcula a média
 das turmas de alunos e envia
 do calculo da média.
 */
+//
 const alunosDaTurmaA = [
   {
     nome: "Mayk",
