@@ -5,8 +5,7 @@ const nome = ['Mayk', 'Diego', 'Valeska'];
 
 
 function mediaNotas(nota1, nota2, nota3){
-    notatotal = nota1 + nota2 + nota3;
-    media = notatotal / 3;
+    media = (nota1 + nota2 + nota3) / 3;
 
     console.log(`A nota do ${nome[0]} é ${nota1}, do aluno ${nome[1]} é ${nota2} e a do aluno ${nome[2]} é ${nota3} e a média das três notas é: ${media}`);
 
