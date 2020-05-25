@@ -1,5 +1,4 @@
 //Colocar objetos dentro de um vetor
-
 const alunos = [
   {
     nome: "Mayk",

@@ -1,5 +1,4 @@
 //Conceito de criação de objetos
-
 const aluno01 = {
   nome: "Mayk",
   nota: 4

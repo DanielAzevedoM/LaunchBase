@@ -17,7 +17,6 @@ se sim, deixar entrar, se não, bloquear entrada
 se a pessoa tiver 17 anos
 avisar para voltar quando fizer 18 anos
 */
-
 function verificarIdade(idade){
   if(idade >= 18){
     return console.log("Entrada permitida, pode prosseguir!")

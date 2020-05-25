@@ -1,6 +1,7 @@
 //Aula - 3
 /* Mostrar se a média dos alunos é maior, menor ou igual a 5.
 */
+
 const nome = ['Mayk', 'Diego', 'Valeska'];
 
 

@@ -3,6 +3,7 @@
 das notas entre os alunos e enviar mensagem
 do calculo da média.
 */
+
 const nome = ['Mayk', 'Diego', 'Valeska'];
 
 function mediaNotas(nota1, nota2, nota3){

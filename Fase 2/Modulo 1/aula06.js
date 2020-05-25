@@ -10,7 +10,6 @@ OPERADORES DE LÓGICOS
 !   "NÃO" Nega uma condição
 
 */
-
 function verificarIdade(idade){
   if(!(idade >= 18) || idade === 17){
     return console.log("Entrada proibida, permitida entrada a partir de 18 anos!")
