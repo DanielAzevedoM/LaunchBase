@@ -82,6 +82,7 @@ function getAverageTransactionValue() {
   return sum / user.transactions.length
 }
 
+
 function getTransactionsCount(){
   let count = {
     credit: 0,
