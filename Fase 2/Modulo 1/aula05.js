@@ -28,5 +28,6 @@ function verificarIdade(idade){
     return console.log("Entrada proibida, permitida entrada a partir de 18 anos!")
   }
 }
+
 verificarIdade(idade);
 
