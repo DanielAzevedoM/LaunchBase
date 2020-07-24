@@ -1,0 +1,94 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap";
+:root{
+    --hover-color: rgb(128, 36, 146)
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    font-family: Roboto;
+    background: #2a2b31;
+    color: white;
+}
+
+header {
+    padding: 30px;
+    text-align: center;
+    background: rgb(31, 27, 27);
+}
+
+.links a {
+    
+    font-size: 25px;
+    text-decoration: none;
+    padding: 0 30px;
+    color: white;
+ 
+}
+.links a:hover{
+    color: var(--hover-color);
+    transition: 200ms;
+}
+
+
+#wrapper{
+
+    padding: 32px;
+    max-height: 800px;
+
+}
+
+
+#wrapper .empresa {
+    margin-left: 40%;
+    float: center;
+    color: white;
+   
+}
+
+#wrapper .imagem-empresa img {
+    float: left;
+    border: 5px solid var(--hover-color);
+    margin-top: 5%;
+    margin-left: 10%;
+    max-height: 350px;
+    border-radius: 50%;
+}
+
+#wrapper .texto-wrapper p{
+    font-size: 25px;
+    float: center;
+    margin-top: 10%;
+    margin-left: 40%;
+    max-width: 600px;
+    padding:0;
+    
+}
+
+.tecnologias {
+    
+    float: right;
+    margin-top: 7%;
+    margin-right: 45%;
+    
+}
+
+.tecnologias ul{
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+#footer-social{
+    float: center;
+    margin-top: 20%;
+    margin-left: 39%;
+}
+
+#footer-social a{
+    padding: 10px;
+    font-size: 20px;
+    border-bottom: 1px solid var(--hover-color);
+    margin-left: 10px;
+}
