@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+        <title >Rocketseat</title>
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon" />  
+    {% endblock %}   
+
+    <link rel="stylesheet" href="/styles.css">
+
+</head>
+<body>
+    <header>
+        <div id="menu"class="links">
+            <a href="/">Sobre</a>
+            <a href="https://discordapp.com/invite/gCRAFhc">Comunidade</a>
+            <a href="mailto:oi@rocketseat.com.br">Email</a>
+            <a href="tel:+5547992078767">Telefone</a>
+            <a href="/courses">Conteúdo</a>
+        </div>
+    </header>
+        
+        {% block content %} {% endblock %}
+
+        {% block ERROR %}{% endblock %}
+
+
+</body>
+</html>

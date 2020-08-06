@@ -1,0 +1,200 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap";
+
+:root{
+    --hover-color: rgb(128, 36, 146)
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    font-family: Roboto;
+    background: #2a2b31;
+    color: white;
+}
+
+header {
+    padding: 30px;
+    text-align: center;
+    background: rgb(31, 27, 27);
+}
+
+.links a { 
+    font-size: 25px;
+    text-decoration: none;
+    padding: 0 30px;
+    color: white;
+ 
+}
+
+.links a:hover{
+    color: var(--hover-color);
+    transition: 200ms;
+}
+
+
+#titulo{ 
+    
+    padding: 32px;
+    text-align: center;
+}
+
+.imagem-empresa{
+   max-width: 350px;
+   margin-left:  15%;
+   
+}
+
+.imagem-empresa img{
+    width: 100%;
+    border-radius: 50%;
+    border: 4px solid var(--hover-color);
+    float:left
+}
+
+.texto-info{
+    
+    font-size: 25px;
+    text-align: left;
+    line-height: 30px;
+    max-width: 600px;
+    margin-left: 42%;
+    height: 400px;
+}
+
+.texto-info p {
+    float: right;
+    margin-top: 15%;
+}
+
+.tecnologias{
+    margin-left: 42%;
+}
+
+.tecnologias ul{
+    font-size: 20px;
+    padding: 15px;
+    text-align: left;
+    margin-left: 15px;
+    
+}
+
+#footer-social{
+    
+    margin-top: 5%;
+    margin-left: 40%;
+
+}
+
+#footer-social a{
+    border-bottom: 2px solid var(--hover-color);
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 10px;
+
+}
+
+.cards{
+    
+    max-width: 900px;
+    max-height: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card{
+   
+    background: rgb(24, 21, 21);
+    border-radius: 5px;
+}
+
+.card-img{ 
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    cursor: pointer;   
+    height: 276px;
+    border-radius: 5px 5px 0 0;
+}
+
+.card-img img{
+    
+    margin-top: 50px;
+}
+
+.nome-curso, .info-curso{
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    
+}
+
+.nome-curso p:hover{
+    color: var(--hover-color);
+    cursor: pointer;
+}
+
+.info-curso{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 24px;
+}
+
+.info-curso p{
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(49, 49, 49);
+    max-width: 100px;
+}
+
+.modal-overlay{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed;
+    visibility: hidden;
+}
+
+.modal-overlay.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal{
+    background-color: white;
+    margin: 5% auto;
+    width: 80%;
+    height: 80%;
+    position: relative;
+}
+
+.modal .close-modal{
+    color: white;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+} 
+
+.close-modal i{
+    
+    background: rgba(126, 10, 10, 0.733);
+    border: 1px solid;
+    
+}
+
+iframe{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top: 5%;
+    right: 0%;
+}
+
+#ERROR h2{
+    text-align: center;
+}
