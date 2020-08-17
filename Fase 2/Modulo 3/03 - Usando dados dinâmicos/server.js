@@ -24,9 +24,7 @@ server.get("/", (req, res) => {
             { name: "Github", url: "https://github.com/DanielAzevedoM"},
             { name: "Linkedin", url: "https://www.linkedin.com/in/daniel-azev%C3%AAdo-123193196/"}
         ]
-
     }
-
     return res.render("about", {about: about})
 })
 
