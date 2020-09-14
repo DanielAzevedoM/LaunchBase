@@ -15,3 +15,4 @@ Repositório sobre os módulos ensinados do Bootcamp LaunchBase.
 - Nunjucks
 - HTML
 - CSS
+- Javascript
