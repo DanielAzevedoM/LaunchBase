@@ -1,0 +1,13 @@
+{
+  "instructors": [
+    {
+      "id": 1,
+      "avatar_url": "http://google.com/",
+      "name": "Daniel",
+      "birth": 922838400000,
+      "created_at": 1601583562216,
+      "services": "musculação",
+      "gender": "M"
+    }
+  ]
+}
