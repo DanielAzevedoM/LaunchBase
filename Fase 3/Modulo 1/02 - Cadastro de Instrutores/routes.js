@@ -1,5 +1,7 @@
 const express = require('express')
 
+const instructors = require('./instructors')
+
 const routes = express.Router();
 
 routes.get('/', function(req, res){
@@ -18,20 +20,7 @@ routes.get('/members', function(req, res){
     return res.send("members")
 })
 
-routes.post('/instructors', function(req, res){
-    
-    const keys = Object.keys(req.body)
-
-    for (let i = 0; i < keys.length; i++) {
-        const key = keys[i];
-        
-        if(req.body[key] == ""){
-            return res.send(`Preencha todos os campos! Campo em braco: ${key}`)
-        }
-    }
-
-    return res.send(req.body)
-})
+routes.post('/instructors', instructors.post)
 
 
 
