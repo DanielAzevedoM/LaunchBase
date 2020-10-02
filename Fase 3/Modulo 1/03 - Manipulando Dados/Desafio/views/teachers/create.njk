@@ -1,0 +1,59 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Teachers</title>
+{% endblock %}
+
+{% block content %}
+
+    <form class="card" method="POST" action="/teachers">
+         <section class="avatar" style="background: url(https://source.unsplash.com/collection/1603248/900x900) no-repeat center center / cover "></section>
+        
+        <section class="details">
+            <h3>Sign In</h3>
+
+            <div class="item">
+                <div>Avatar URL</div>
+                <div><input type="url" name="avatar_url" placeholder="http://"></div>
+            </div>
+
+            <div class="item">
+                <div>Name:</div>
+                <div><input type="text" name="name" placeholder="Insert your name"></div>
+            </div>
+
+            <div class="item">
+                <div>Birth:</div>
+                <div><input type="date" name="birth"></div>
+            </div>
+
+            <div class="item">
+
+                <div>schooling</div>
+                <div><select name="Schooling:">
+                    <option value="Ensino Médio Completo" name="schooling" selected>Ensino Médio Completo</option> 
+                    <option value="Ensino Superior Completo" name="schooling">Ensino Superior Completo</option>
+                    <option value="Mestrado e Doutorado" name="schooling">Mestrado e Doutorado</option>
+                </select></div>
+            </div>
+
+            <div class="item">
+                <div>Type of class:</div>
+                <span><input type="radio" name="typeclass" value="Presential" checked>Presential</span>
+                <span><input type="radio" name="typeclass" value="Distance">Distance</span>
+            </div>
+
+             <div class="item">
+                <div>Attendance:</div>
+                <div><input type="text" name="attendance" placeholder="Português, Matemática, Ciências"></div>
+            </div>
+
+           <button type="submit">Send</button>
+
+        </section>
+
+       
+
+    </form>
+    
+{% endblock %}
