@@ -1,0 +1,14 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "avatar_url": "https://media-exp1.licdn.com/dms/image/C4E35AQFCAgIxWDeTxA/profile-framedphoto-shrink_800_800/0?e=1602165600&v=beta&t=xN19EiASZslmNsQfUKy8rNztP0VOiMjyWHfAzILLFZ8",
+      "name": "Celina Soares",
+      "birth": 944524800000,
+      "schooling": "Mestrado e Doutorado",
+      "typeclass": "Distância",
+      "attendance": "Publicidade, Odontologia",
+      "created_at": 1602078289489
+    }
+  ]
+}
