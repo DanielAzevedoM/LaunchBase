@@ -7,6 +7,7 @@
 {% block content %}
 
     <div class="card table-container">
+        <a href="/instructors/create">Novo</a>
        <table width="100%">
            <thead>
                <tr>
@@ -20,9 +21,9 @@
                 <tr>
                     <td><span style="background-image: url({{instructor.avatar_url}})"></span> {{instructor.name}}</td>
                     <td>
-                        {% for service in instructor.services.split(',')%}
-                            <span class="spanservice">{{service}}</span>
-                        {% endfor%}
+                            {% for service in instructor.services.split(',')%}
+                             <span class="spanService">{{service}}</span>
+                            {% endfor %}
                     </td>
                     <td><a href="/instructors/{{instructor.id}}">Ver</a></td>
                 </tr>

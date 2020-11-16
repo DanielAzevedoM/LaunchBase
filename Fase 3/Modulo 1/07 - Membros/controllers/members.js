@@ -21,10 +21,22 @@ exports.show = function(req, res){
 
     if(!foundMember) return res.send("member not found")
 
+    function transformBlood(){
+        if(foundMember.blood == "A1") return "A+" 
+        if(foundMember.blood == "A2") return "A-" 
+        if(foundMember.blood == "B1") return "B+" 
+        if(foundMember.blood == "B2") return "B-" 
+        if(foundMember.blood == "AB1") return "AB+" 
+        if(foundMember.blood == "AB2") return "AB-" 
+        if(foundMember.blood == "O1") return "O+" 
+        if(foundMember.blood == "O2") return "O-" 
+    }
 
     const member = {
+        
         ...foundMember,
-        age: age(foundMember.birth),
+        birth: date(foundMember.birth),
+        blood: transformBlood(foundMember.blood)
         
     }
 
@@ -32,8 +44,7 @@ exports.show = function(req, res){
 }
 
 exports.post = function(req, res){
-   
-    
+      
     const keys = Object.keys(req.body)
 
     for (let i = 0; i < keys.length; i++) {
@@ -43,21 +54,21 @@ exports.post = function(req, res){
             return res.send(`Preencha todos os campos! Campo em branco: ${key}`)
         }
     }
+   
+    let id = 1
+    const lastMember = data.members[data.members.length - 1]
 
-    let { avatar_url, name, birth, gender, services} = req.body
+    birth = Date.parse(req.body.birth)
+   
 
-    birth = Date.parse(birth)
-    const id = Number(data.members.length + 1)
-    const created_at = Date.now()
+    if(lastMember){
+        id = lastMember + 1
+    }
 
     data.members.push({
+        ...req.body,
         id,
-        avatar_url,
-        name,
-        birth,
-        gender,
-        services,
-        created_at,
+        birth,   
     })
 
      fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err){

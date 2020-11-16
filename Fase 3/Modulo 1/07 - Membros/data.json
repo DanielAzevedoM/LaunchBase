@@ -1,5 +1,17 @@
-{ 
-  "members": [],
+{
+  "members": [
+    {
+      "avatar_url": "https://i.ytimg.com/vi/Q7MaTqgtoxE/maxresdefault.jpg",
+      "name": "Celina Soares",
+      "email": "celina@hotmail.com",
+      "birth": 944524800000,
+      "gender": "F",
+      "blood": "AB1",
+      "weight": "70",
+      "height": "151",
+      "id": 1
+    }
+  ],
   "instructors": [
     {
       "id": 1,
@@ -19,5 +31,6 @@
       "services": "Publicitária ",
       "created_at": 1603461085132
     }
+    
   ]
 }
