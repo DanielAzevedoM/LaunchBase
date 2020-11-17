@@ -169,7 +169,7 @@ header{
 
 }
 
-input{
+input, select{
 
     outline: none;
     width: 100%;

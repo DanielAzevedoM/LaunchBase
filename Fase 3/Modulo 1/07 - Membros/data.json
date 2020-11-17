@@ -1,15 +1,26 @@
 {
   "members": [
     {
-      "avatar_url": "https://i.ytimg.com/vi/Q7MaTqgtoxE/maxresdefault.jpg",
+      "id": 2,
+      "avatar_url": "https://source.unsplash.com/collection/1603248/900x900",
+      "name": "Daniel Azevêdo",
+      "email": "danielazevedom@hotmail.com",
+      "birth": 922838400000,
+      "gender": "M",
+      "blood": "O1",
+      "weight": "114",
+      "height": "171"
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://source.unsplash.com/collection/1603248/900x900",
       "name": "Celina Soares",
       "email": "celina@hotmail.com",
       "birth": 944524800000,
       "gender": "F",
       "blood": "AB1",
-      "weight": "70",
-      "height": "151",
-      "id": 1
+      "weight": "57",
+      "height": "151"
     }
   ],
   "instructors": [
@@ -31,6 +42,5 @@
       "services": "Publicitária ",
       "created_at": 1603461085132
     }
-    
   ]
 }

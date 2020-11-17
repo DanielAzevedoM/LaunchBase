@@ -35,7 +35,7 @@ exports.show = function(req, res){
     const member = {
         
         ...foundMember,
-        birth: date(foundMember.birth),
+        birth: date(foundMember.birth).birthDay,
         blood: transformBlood(foundMember.blood)
         
     }
@@ -55,19 +55,22 @@ exports.post = function(req, res){
         }
     }
    
-    let id = 1
-    const lastMember = data.members[data.members.length - 1]
+  
 
     birth = Date.parse(req.body.birth)
    
+    let id = 1
+    const lastMember = data.members[data.members.length - 1]
+
 
     if(lastMember){
-        id = lastMember + 1
+        id = lastMember.id + 1
     }
 
     data.members.push({
-        ...req.body,
         id,
+        ...req.body,
+       
         birth,   
     })
 
@@ -91,7 +94,7 @@ exports.edit = function(req, res){
 
     const member = {
         ...foundMember,
-        birth: date(foundMember.birth)
+        birth: date(foundMember.birth).iso
 
     }
     return res.render('members/edit', { member })
