@@ -1,0 +1,25 @@
+{
+  "students": [
+    {
+      "id": 2,
+      "avatar_url": "https://source.unsplash.com/collection/1603248/900x900",
+      "name": "Celina Soares",
+      "birth": 944524800000,
+      "email": "celina@hotmail.com",
+      "schoolYear": "10",
+      "workload": "14"
+    }
+  ],
+  "teachers": [
+    {
+      "id": 2,
+      "avatar_url": "https://source.unsplash.com/collection/1603248/900x900",
+      "name": "Celina Soares",
+      "birth": 944524800000,
+      "schooling": "Mestrado e Doutorado",
+      "typeclass": "Distância",
+      "attendance": "Matemática",
+      "created_at": 1604796823829
+    }
+  ]
+}
