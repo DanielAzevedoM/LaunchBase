@@ -1,0 +1,42 @@
+<div class="item">
+                <div>Avatar URL</div>
+                <div><input type="url" name="avatar_url" placeholder="http://" value="{{teacher.avatar_url}}"></div>
+            </div>
+
+            <div class="item">
+                <div>Name:</div>
+                <div><input type="text" name="name" placeholder="Insert your name" value="{{teacher.name}}"></div>
+            </div>
+
+            <div class="item">
+                <div>Birth:</div>
+                <div><input type="date" name="birth" value="{{teacher.birth}}"></div>
+            </div>
+
+            <div class="item">
+
+                <div>Education Level:</div>
+                <div><select name="education_level"}>
+                    <option value="Ensino Médio Completo" {% if teacher.education_level == "Ensino Médio Completo" %}
+                    selected {% endif %}>Ensino Médio Completo</option> 
+                    <option value="Ensino Superior Completo" {% if teacher.education_level == "Ensino Superior Completo" %}
+                    selected {% endif %} >Ensino Superior Completo</option>
+                    <option value="Mestrado e Doutorado" {% if teacher.education_level == "Mestrado e Doutorado" %}
+                    selected {% endif %}>Mestrado e Doutorado</option>
+                </select></div>
+            </div>
+
+            <div class="item">
+                <div>class Type:</div>
+                <span><input type="radio" name="class_type" value="Presencial" {% if teacher.class_type == "Presencial" %}
+                checked{% endif %}>Presencial</span>
+                <span><input type="radio" name="class_type" value="Distância" {% if teacher.class_type == "Distância" %}
+                checked{% endif %}>Distância</span>
+            </div>
+
+             <div class="item">
+                <div>Subjects Taught:</div>
+                <div><input type="text" name="subjects_taught" placeholder="Português, Matemática, Ciências" value="{{teacher.subjects_taught}}"></div>
+            </div>
+
+           <button type="submit">Salvar</button>
